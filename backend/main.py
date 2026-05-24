@@ -27,8 +27,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-CATALOG_PATH = "../grocery-data/cleaned_catalog.csv"
-SALES_PATH = "../grocery-data/historical_sales.csv"
+CATALOG_PATH = "grocery-data/cleaned_catalog.csv"
+SALES_PATH = "grocery-data/historical_sales.csv"
 
 class StockEvaluationRequest(BaseModel):
     sku: str

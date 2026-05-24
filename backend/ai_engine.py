@@ -9,7 +9,7 @@ from crewai_tools import FileReadTool
 load_dotenv()
 
 # Define our model constant
-llm_model = 'openrouter/meta-llama/llama-3.3-70b-instruct:nitro'
+llm_model = os.getenv("AI_MODEL",'openrouter/meta-llama/llama-3.3-70b-instruct:nitro')
 if os.getenv("USE_GROQ") == "1":
     llm_model = 'groq/groq/compound'
 
